@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas e Games</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Seção de Introdução */
+        #intro {
+            margin-bottom: 40px;
+        }
+
+        #intro h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        #intro p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        /* Seção de Jogos */
+        #games {
+            margin-bottom: 40px;
+        }
+
+        #games h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .game {
+            background-color: #fff;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .game:hover {
+            transform: translateY(-5px);
+        }
+
+        .game h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .game p {
+            color: #555;
+        }
+
+        /* Acessibilidade */
+        #accessibility {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* Contraste invertido */
+        .high-contrast {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .high-contrast header,
+        .high-contrast footer {
+            background-color: #222;
+        }
+
+        .high-contrast .game {
+            background-color: #444;
+            color: #fff;
+        }
+
+        .high-contrast button {
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Bem-vindo à Minha Loja de Roupas e Gaming</h1>
+        <p>Aqui você encontra roupas e tudo sobre o universo dos jogos, minha paixão.</p>
+    </header>
+
+    <!-- Seção de Introdução -->
+    <section id="intro">
+        <h2>A Profissão que Amo</h2>
+        <p>Sou apaixonado por design de moda e, mais ainda, pelo mundo dos games. Desde criança, os jogos me fascinam, e ao longo dos anos, percebi que minha carreira poderia unir essas duas paixões.</p>
+        <p>Este site reflete minha dedicação tanto ao mundo fashion quanto aos jogos que amo. Se você também é fã desse universo, vai adorar o que preparamos por aqui!</p>
+    </section>
+
+    <!-- Seção de Jogos Atuais -->
+    <section id="games">
+        <h2>Jogos Atuais</h2>
+        <div class="game-container">
+            <div class="game">
+                <h3>Fortnite</h3>
+                <p>Um dos jogos mais populares do mundo, mistura ação, construção e diversão com amigos.</p>
+            </div>
+            <div class="game">
+                <h3>FIFA 23</h3>
+                <p>O mais novo jogo da franquia FIFA, com gráficos incríveis e jogabilidade imersiva.</p>
+            </div>
+            <div class="game">
+                <h3>Call of Duty: Modern Warfare II</h3>
+                <p>Um jogo de tiro com alta intensidade, com mapas deslumbrantes e uma comunidade imensa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão de Acessibilidade -->
+    <section id="accessibility">
+        <button onclick="toggleContrast()">Alterar Contraste</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Loja de Roupas e Games</p>
+    </footer>
+
+    <script>
+        // Função para alternar o contraste de cores
+        function toggleContrast() {
+            document.body.classList.toggle('high-contrast');
+        }
+    </script>
+</body>
+</html>
 
